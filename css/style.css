@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', sans-serif;
+    color: #333333;
+}
+
+header {
+    margin: 5px;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 5px 5px 7px 0px rgba(0, 0, 0, 0.75);
+    background-color: #399839;
+    color: #f1f1f1;
+    text-align: center;
+}
+
+main {
+    margin-top: 10px;
+}
+
+.question-wrapper {
+    margin: 5px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #97f295;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.question-wrapper:hover {
+    cursor: pointer;
+}
+
+.arrow {
+    transition: transform 0.3s ease;
+}
+
+.arrow.down {
+    transform: rotate(-180deg);
+}
+
+.answer-wrapper {
+    margin: 0 5px;
+    padding: 0 10px;
+    background-color: #f1f1f1;
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+    max-height: max-content;
+}
+
+.answer-wrapper.close {
+    max-height: 0;
+}
+
+.answer-wrapper > .arrow-2 {
+    align-self: flex-end;
+    padding-bottom: 10px;
+}
+
+.answer-wrapper > .arrow-2:hover {
+    cursor: pointer;
+}
+
+.answer-contenido {
+    padding: 10px 8vw;
+}
+
+p, pre, ul, li, dl, dt, dd {
+    font-size: 1.2rem;
+}
+
+.answer-contenido p {
+    margin: 10px 0;
+    text-align: justify;
+}
+
+.answer-contenido .img-wrapper {
+    width: 50vw;
+    min-width: 200px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.answer-contenido .img-wrapper-vertical {
+    width: 35vw;
+    min-width: 200px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.answer-contenido img {
+    width: 100%;
+}
+
+.answer-contenido .title-text {
+    text-align: center;
+}
+
+.answer-contenido dd {
+    margin: 0 0 10px 0;
+    text-align: justify
+}
+
+.answer-contenido .table-languages {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.table-languages th, .table-languages td {
+    border: 1px solid #333333;
+    padding: 8px;
+    font-size: clamp(1px, 1vw, 16px);
+}
+
+.answer-contenido hr {
+    margin-top: 15px;
+    margin-bottom: 7px;
+}
+
+.answer-contenido li {
+    margin-left: 20px;
+    padding-left: 20px;
+}
+
+.answer-contenido pre {
+    padding-left: 20px;
+    padding-right: 5px;
+    background-color: #333333;
+    color: #f1f1f1;
+    text-wrap: wrap;
+    font-size: clamp(1px, 3vw, 16px);;
+}
