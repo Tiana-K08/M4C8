@@ -125,7 +125,7 @@ p, pre, ul, li, dl, dt, dd {
 
 .answer-contenido hr {
     margin-top: 15px;
-    margin-bottom: 7px;
+    margin-bottom: 28px;
 }
 
 .answer-contenido li {
@@ -140,4 +140,39 @@ p, pre, ul, li, dl, dt, dd {
     color: #f1f1f1;
     text-wrap: wrap;
     font-size: clamp(1px, 3vw, 16px);;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 60px;
+}
+
+.flex-container > .img-wrapper {
+    width: 40%;
+    /* margin: 0; */
+}
+
+.underlined {
+    text-decoration: underline;
+}
+
+.large-text {
+    font-size: 1.1em;
+}
+
+
+
+
+@media (max-width: 768px) {
+    .flex-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 0;
+    }
+
+    .flex-container > .img-wrapper {
+        width: 100%;
+    }
 }

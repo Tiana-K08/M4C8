@@ -19,34 +19,45 @@
             </div>
             <div class="answer-wrapper close">
                 <div class="answer-contenido">
-                    <p>
-                        <b>Un ciclo</b> es una construcción en programación que permite repetir el mismo bloque de código varias veces mientras se cumpla una determinada condición.
-                    </p>
-                    <p>
-                        Los ciclos son útiles cuando se necesita:
-                    </p>
-                    <ul>
-                        <li>recorrer los elementos de un arreglo;</li>
-                        <li>realizar una tarea muchas veces (por ejemplo, contar hasta 100);</li>
-                        <li>solicitar la entrada del usuario hasta que introduzca un valor correcto;</li>
-                        <li>automatizar acciones repetitivas.</li>
-                    </ul>
-                    <p>
-                        En JavaScript hay varios tipos principales de ciclos:
-                    </p>
-                    <ul>
-                        <li>for - ciclo con una cantidad conocida de repeticiones de antemano.</li>
-                        <li>while - ciclo con una cantidad desconocida de repeticiones, mientras se cumpla una condición.</li>
-                        <li>do...while - como while, pero el código se ejecuta al menos una vez.</li>
-                        <li>for...in - se utiliza para recorrer las propiedades de un objeto.</li>
-                        <li>for...of - se utiliza para recorrer los valores de objetos iterables (arreglos, cadenas, etc.).</li>
-                    </ul>
+                    <div class="flex-container">
+                        <div class="text-wrapper">
+                            <p>
+                                <b class="large-text">Un ciclo</b> es una construcción en programación que permite repetir el mismo bloque de código varias veces mientras se cumpla una determinada condición.
+                            </p>
+                            <br>
+                            <p>
+                                <i class="underlined">Los ciclos son útiles cuando se necesita:</i>
+                            </p>
+                            <ul>
+                                <li>recorrer los elementos de un arreglo;</li>
+                                <li>realizar una tarea muchas veces (por ejemplo, contar hasta 100);</li>
+                                <li>solicitar la entrada del usuario hasta que introduzca un valor correcto;</li>
+                                <li>automatizar acciones repetitivas.</li>
+                            </ul>
+                            <br>
+                            <p>
+                                <i class="underlined">En JavaScript hay varios tipos principales de ciclos:</i>
+                            </p>
+                            <ul>
+                                <li><b>for</b> - ciclo con una cantidad conocida de repeticiones de antemano.</li>
+                                <li><b>while</b> - ciclo con una cantidad desconocida de repeticiones, mientras se cumpla una condición.</li>
+                                <li><b>do...while</b> - como while, pero el código se ejecuta al menos una vez.</li>
+                                <li><b>for...in</b> - se utiliza para recorrer las propiedades de un objeto.</li>
+                                <li><b>for...of</b> - se utiliza para recorrer los valores de objetos iterables (arreglos, cadenas, etc.).</li>
+                            </ul>
+                            <!-- <br> -->
+                        </div>
+                        <div class="img-wrapper">
+                            <img src="img/loops.jpg" alt="loops">
+                        </div>
+                    </div>
                     <hr>
                     <p>
-                        El ciclo for es un ciclo universal con un contador controlado. Se usa más comúnmente cuando se sabe de antemano cuántas veces se deben repetir las acciones.
+                        &#128204; <b class="large-text">El ciclo for</b> es un ciclo universal con un contador controlado. Se usa más comúnmente cuando se sabe de antemano cuántas veces se deben repetir las acciones.
                     </p>
+                    <br>
                     <p>
-                        Ejemplo:
+                        Estructura del ciclo <b>for</b>:
                     </p>
                     <pre><code>
 for (variable; condición; paso) {
@@ -54,16 +65,17 @@ for (variable; condición; paso) {
 }
                     </code></pre>
                     <ul>
-                        <li>Se ejecuta el variable (por ejemplo, let i = 0) — esta es la inicialización;</li>
-                        <li>Se evalúa la condición (por ejemplo, i < 5) — si es true, se ejecuta el cuerpo del ciclo;</li>
-                        <li>Después de ejecutar el cuerpo del ciclo, se realiza el paso (por ejemplo, i++ — incremento del contador);</li>
-                        <li>Se vuelve a verificar la condición, y así sucesivamente.</li>
+                        <li>se ejecuta el variable (por ejemplo, let i = 0) - esta es la inicialización;</li>
+                        <li>se evalúa la condición (por ejemplo, i &lt; 5) - si es true, se ejecuta el cuerpo del ciclo;</li>
+                        <li>después de ejecutar el cuerpo del ciclo, se realiza el paso (por ejemplo, i++ - incremento del contador);</li>
+                        <li>se vuelve a verificar la condición, y así sucesivamente.</li>
                     </ul>
+                    <br>
                     <p>
                         Ejemplo:
                     </p>
                     <pre><code>
-for (let i = 1; i <= 3; i++) {
+for (let i = 1; i &lt;= 3; i++) {
     console.log(`Iteración número ${i}`);
 }
 
@@ -71,8 +83,9 @@ for (let i = 1; i <= 3; i++) {
 // Iteración número 2  
 // Iteración número 3
                     </code></pre>
+                    <br>
                     <p>
-                        ¿Cuándo se utiliza el ciclo for?
+                        <i class="underlined">¿Cuándo se utiliza el ciclo <b>for</b>?</i>
                     </p>
                     <ul>
                         <li>Cuando se conoce la cantidad exacta de iteraciones.</li>
@@ -80,18 +93,342 @@ for (let i = 1; i <= 3; i++) {
                         <li>Cuando se necesita controlar el paso (por ejemplo, i += 2, i--).</li>
                     </ul>
                     <hr>
-                    
+                    <p>
+                        &#128204; <b class="large-text">El ciclo while</b> ejecuta un bloque de código mientras la condición sea verdadera (true). Es útil cuando no se sabe de antemano cuántas veces se deben repetir las acciones.
+                    </p>
+                    <br>
+                    <p>
+                        Estructura del ciclo <b>while</b>:
+                    </p>
+                    <pre><code>
+while (condición) {
+  // cuerpo del ciclo
+}
+                    </code></pre>
+                    <ul>
+                        <li>primero se verifica la condición;</li>
+                        <li>si la condición es true, se ejecuta el cuerpo del ciclo;</li>
+                        <li>luego, se vuelve a verificar la condición;</li>
+                        <li>esto se repite mientras la condición siga siendo verdadera;</li>
+                    </ul>
+                    <p>
+                        Si la condición es <i>false</i> desde el principio, el cuerpo del ciclo no se ejecutará ni una sola vez.
+                    </p>
+                    <br>
+                    <p>
+                        Ejemplo:
+                    </p>
+                    <pre><code>
+let number = 1;
 
+while (number &lt;= 3) {
+  console.log(`Número: ${number}`);
+  number++;
+}
 
+// Número: 1  
+// Número: 2  
+// Número: 3
+                    </code></pre>
+                    <br>
+                    <p>
+                        <i class="underlined">¿Cuándo se utiliza el ciclo <b>while</b>?</i>
+                    </p>
+                    <ul>
+                        <li>Cuando no sabes cuántas iteraciones serán necesarias.</li>
+                        <li>Por ejemplo, al recibir datos del usuario, cuando necesitas esperar una entrada válida.</li>
+                        <li>Al esperar un evento o estado (por ejemplo, la carga de datos).</li>
+                    </ul>
+                    <hr>
+                    <p>
+                        &#128204; <b class="large-text">El ciclo do...while</b> es similar al ciclo <b>while</b>, pero garantiza que el cuerpo del ciclo se ejecute al menos una vez, incluso si la condición es falsa desde el principio.
+                    </p>
+                    <br>
+                    <p>
+                        Estructura del ciclo <b>do...while</b>:
+                    </p>
+                    <pre><code>
+do {
+  // cuerpo del ciclo
+} while (condición);
+                    </code></pre>
+                    <ul>
+                        <li>se ejecuta el cuerpo del ciclo una vez;</li>
+                        <li>luego se verifica la condición;</li>
+                        <li>si la condición es true, el ciclo se repite;</li>
+                        <li>si es false, el ciclo termina.</li>
+                    </ul>
+                    <br>
+                    <p>
+                        Ejemplo:
+                    </p>
+                    <pre><code>
+let i = 5;
+
+do {
+  console.log(`Esto se imprimirá al menos una vez i = ${i}`);
+  i++;
+} while (i &lt; 3);
+
+// Esto se imprimirá al menos una vez i = 5
+                    </code></pre>
+                    <br>
+                    <p>
+                        <i class="underlined">¿Cuándo se utiliza el ciclo <b>do...while</b>?</i>
+                    </p>
+                    <ul>
+                        <li>Cuando necesitas asegurarte de que el cuerpo del ciclo se ejecute al menos una vez.</li>
+                        <li>Por ejemplo, al pedir una contraseña antes de iniciar sesión — se debe solicitar la entrada al menos una vez.</li>
+                        <li>Cuando la verificación debe hacerse después de ejecutar la acción.</li>
+                    </ul>
+                    <hr>
+                    <p>
+                        &#128204; <b class="large-text">El ciclo for...in</b> se utiliza para recorrer las propiedades de un objeto. Es útil cuando necesitas acceder a todas las propiedades de un objeto sin importar su orden.
+                    </p>
+                    <br>
+                    <p>
+                        Estructura del ciclo <b>for...in</b>:
+                    </p>
+                    <pre><code>
+for (let clave in objeto) {
+  // cuerpo del ciclo
+}
+                    </code></pre>
+                    <ul>
+                        <li>se declara una variable (por ejemplo, clave) que tomará el nombre de cada propiedad del objeto;</li>
+                        <li>el cuerpo del ciclo se ejecuta para cada propiedad del objeto.</li>
+                    </ul>
+                    <br>
+                    <p>
+                        Ejemplo:
+                    </p>
+                    <pre><code>
+let user = {
+  nombre: 'Elena',
+  edad: 30,
+  ciudad: 'Kazan'
+};
+
+for (let clave in user) {
+  console.log(clave + ": " + user[clave]);
+}
+
+// nombre: Elena
+// edad: 30
+// ciudad: Kazan
+                    </code></pre>
+                    <br>
+                    <p>
+                        <i class="underlined">¿Cuándo se utiliza el ciclo <b>for...in</b>?</i>
+                    </p>
+                    <ul>
+                        <li>Cuando necesitas recorrer las propiedades de un objeto.</li>
+                        <li>Cuando no importa el orden de las propiedades.</li>
+                        <li>Cuando no necesitas acceder a los valores de un arreglo por índice.</li>
+                    </ul>
+                    <hr>
+                    <p>
+                        &#128204; <b class="large-text">El ciclo for...of</b> se utiliza para recorrer los valores de objetos iterables (arreglos, cadenas, etc.). Es útil cuando necesitas acceder a los valores sin preocuparte por los índices.
+                    </p>
+                    <br>
+                    <p>
+                        Estructura del ciclo <b>for...of</b>:
+                    </p>
+                    <pre><code>
+for (let variable of colección) {
+  // cuerpo del ciclo
+}
+                    </code></pre>
+                    <ul>
+                        <li>se declara una variable (por ejemplo, variable) que tomará el valor de cada elemento de la colección;</li>
+                        <li>el cuerpo del ciclo se ejecuta para cada elemento de la colección.</li>
+                    </ul>
+                    <br>
+                    <p>
+                        Ejemplo:
+                    </p>
+                    <pre><code>
+let names = ['Anna', 'Boris', 'Víctor'];
+
+for (let name of names) {
+  console.log(`Hola, ${name}!`);
+}
+
+// Hola, Anna!
+// Hola, Boris!
+// Hola, Víctor!
+                    </code></pre>
+                    <br>
+                    <p>
+                        <i class="underlined">¿Cuándo se utiliza el ciclo <b>for...of</b>?</i>
+                    </p>
+                    <ul>
+                        <li>Cuando necesitas recorrer los valores de un objeto iterable.</li>
+                        <li>Cuando no necesitas preocuparte por los índices.</li>
+                        <li>Cuando no necesitas acceder a las propiedades del objeto.</li>
+                    </ul>
                 </div>
                 <div class="arrow-2">&#9650;</div>
             </div>
         </div>
-    
+<!-- 2 question -->
+        <div class="question-answer">
+            <div class="question-wrapper">
+                <h3>2. ¿Cuáles son las diferencias entre const, let y var?</h3>
+                <div class="arrow down">&#9650;</div>
+            </div>
+            <div class="answer-wrapper close">
+                <div class="answer-contenido">
+                    <p>
+                        Cuando comenzamos a aprender a programar en JavaScript, una de las primeras cosas con las que nos encontramos es la declaración de variables. En JavaScript, existen tres palabras clave para esto: <b>let</b>, <b>const</b> y <b>var</b>. Todas se usan para crear variables, pero entre ellas existen diferencias importantes. Para entender mejor cómo y cuándo usar cada una de ellas, vamos a analizar cada una por separado.
+                    </p>
+                    <div class="img-wrapper variables-img-wrapper">
+                        <img src="img/var_let_const.jpeg" alt="variables">
+                    </div>
+                    <hr>
+                    <p>
+                        &#128204; <b class="large-text">var</b> - es una palabra clave que se utilizaba para declarar variables antes de la llegada de ES6 (la nueva versión de JavaScript que se lanzó en 2015). <b>var</b> es, en esencia, el método antiguo para crear variables, y aunque aún se puede usar, hoy en día se recomienda utilizar formas más modernas de declarar variables, como let y const.
+                    </p>
+                    <br>
+                    <p>
+                        Las variables declaradas con <b>var</b> tienen un <b>ámbito funcional</b> (function scope). Esto significa que esas variables están disponibles dentro de toda la función en la que fueron declaradas, y no son accesibles fuera de esa función. Si la variable se declara fuera de cualquier función, será global.
+                    </p>
+                    <p>
+                        Ejemplo:   
+                    </p>
+                    <pre><code>
+function testVar() {
+    var x = 10;
+    if (true) {
+        var x = 20; // redefinimos x dentro del bloque if
+        console.log(x); // 20
+    }
+    console.log(x); // 20, porque x fue cambiada dentro del bloque if
+}
+                    </code></pre>
+                    <p>
+                        En este ejemplo, la variable <b>x</b> se redefine dentro del bloque <b>if</b>, y su valor cambia tanto dentro como fuera del bloque. Esto se debe a que <b>var</b> tiene un ámbito funcional.
+                    </p>
+                    <br>
+                    <p>
+                        Puedes declarar una variable usando <b>var</b> varias veces dentro del mismo ámbito, y esto no causará un error. Sin embargo, es importante tener en cuenta que la segunda declaración sobrescribirá el valor de la variable, lo que puede generar comportamientos inesperados en tu código.
+                    </p>
+                    <p>
+                        Ejemplo:   
+                    </p>
+                    <pre><code>
+var x = 10;
+var x = 20; // No hay error, pero x ahora tiene el valor 20
 
+console.log(x); // 20
+                    </code></pre>
+                    <p>
+                        En este ejemplo, la variable <b>x</b> se declara dos veces con <b>var</b>, y no se produce ningún error. Sin embargo, el valor de <b>x</b> cambia a <b>20</b> después de la segunda declaración.
+                    </p>
+                    <br>
+                    <p>
+                        <i class="underlined">¿Cuándo se utiliza <b>var</b>?</i>
+                    </p>
+                    <ul>
+                        <li>Cuando necesitas compatibilidad con versiones antiguas de JavaScript.</li>
+                        <li>Cuando no te importa el ámbito de la variable.</li>
+                        <li>Cuando estás trabajando en un código heredado que ya utiliza <b>var</b>.</li>
+                    </ul>
+                    <p>
+                        Aunque var sigue funcionando en JavaScript, su uso puede provocar errores difíciles de depurar, especialmente si se olvida cómo funciona el ámbito (scope). Esto fue solucionado con la introducción de let y const en ES6.
+                    </p>
+                    <hr>
+                    <p>
+                        &#128204; <b>let</b> - es una palabra clave que se introdujo en ES6 y se utiliza para declarar variables con un <b>ámbito de bloque</b> (block scope). Esto significa que las variables declaradas con let solo están disponibles dentro del bloque en el que fueron declaradas (por ejemplo, dentro de un bucle o una declaración if).
+                    </p>
+                    <p>
+                        Ejemplo:
+                    </p>
+                    <pre><code>
+if (true) {
+    let a = 10;
+    console.log(a); // 10
+}
+console.log(a); // Error: a no está definido, ya que solo existe dentro del bloque if
+                    </code></pre>
+                    <p>
+                        En este ejemplo, la variable <b>a</b> se declara dentro del bloque <b>if</b>, y no está disponible fuera de ese bloque. Esto ayuda a evitar conflictos de nombres y errores en el código.
+                    </p>
+                    <br>
+                    <p>
+                        Puedes declarar una variable usando <b>let</b> varias veces dentro del mismo ámbito, pero esto causará un error. Esto es diferente a <b>var</b>, donde puedes redeclarar variables sin problemas.
+                    </p>
+                    <p>
+                        Ejemplo:   
+                    </p>
+                    <pre><code>
+let a = 10;
+let a = 20; // Error: la variable a ya ha sido declarada
+                    </code></pre>
+                    <p>
+                        En este ejemplo, la variable <b>a</b> se declara dos veces con <b>let</b>, y esto causa un error porque no se permite redeclarar variables con let en el mismo ámbito.
+                    </p>
+                    <br>
+                    <p>
+                        <i class="underlined">¿Cuándo se utiliza <b>let</b>?</i>
+                    </p>
+                    <ul>
+                        <li>Cuando necesitas una variable con un ámbito de bloque.</li>
+                        <li>Cuando no necesitas que la variable sea global.</li>
+                        <li>Cuando quieres evitar conflictos de nombres y errores en el código.</li>
+                    </ul>
+                    <p>
+                        <b>let</b> es la opción más segura y moderna para declarar variables en JavaScript, y se recomienda su uso en la mayoría de los casos.
+                    </p>
+                    <hr>
+                    <p>
+                        &#128204; <b class="large-text">const</b> - es otra palabra clave introducida en ES6 que se utiliza para declarar variables con un <b>ámbito de bloque</b> (block scope), al igual que <b>let</b>. Sin embargo, la principal diferencia entre <b>const</b> y <b>let</b> es que las variables declaradas con <b>const</b> no pueden ser reasignadas después de su declaración. Esto significa que una vez que le das un valor a una variable con <b>const</b>, no puedes cambiar ese valor.
+                    </p>
+                    <p>
+                        Ejemplo:
+                    </p>
+                    <pre><code>
+const PI = 3.14;
+PI = 3.14159; // Error: no se puede reasignar una variable const
+                    </code></pre>
+                    <p>
+                        En este ejemplo, la variable <b>PI</b> se declara con <b>const</b>, y luego se intenta cambiar su valor. Esto causa un error porque no se permite reasignar variables declaradas con <b>const</b>.
+                    </p>
+                    <br>
+                    <p>
+                        Puedes declarar un objeto o un arreglo usando <b>const</b>, pero puedes modificar sus propiedades o elementos. Esto se debe a que el valor de la variable sigue siendo el mismo (la referencia al objeto o arreglo), pero puedes cambiar el contenido del objeto o arreglo.
+                    </p>
+                    <p>
+                        Ejemplo:
+                    </p>
+                    <pre><code>
+const person = {
+    name: 'Juan',
+    age: 30
+};
+
+person.age = 35; // Esto es válido, ya que estamos modificando una propiedad del objeto
+console.log(person.age); // 35
+                    </code></pre>
+                    <p>
+                        En este ejemplo, la variable <b>persona</b> se declara con <b>const</b>, pero se puede modificar la propiedad <b>edad</b> del objeto sin problemas.
+                    </p>
+                    <br>
+                    <p>
+                        <i class="underlined">¿Cuándo se utiliza <b>const</b>?</i>
+                    </p>
+                    <ul>
+                        <li>Cuando necesitas una variable con un ámbito de bloque.</li>
+                        <li>Cuando no necesitas que la variable sea reasignada.</li>
+                        <li>Cuando quieres evitar errores de reasignación accidental.</li>
+                        <li>Cuando trabajas con objetos o arreglos y no necesitas cambiar la referencia del objeto o arreglo.</li>
+                    </ul>
+                    <p>
+                        <b>const</b> es una excelente opción para declarar variables que no deben cambiar, y se recomienda su uso en la mayoría de los casos donde no necesitas reasignar la variable.
+                    </p>
 
 
     </main>
-    <script src="script.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>
