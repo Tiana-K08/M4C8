@@ -4,10 +4,94 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>M4C8</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    <header>
+        <h1>Preguntas teóricas del Punto de control 8</h1>
+    </header>
+    <main>
+<!-- 1 question -->
+        <div class="question-answer">
+            <div class="question-wrapper">
+                <h3>1. ¿Qué tipo de bucles hay en JS?</h3>
+                <div class="arrow down">&#9650;</div>
+            </div>
+            <div class="answer-wrapper close">
+                <div class="answer-contenido">
+                    <p>
+                        <b>Un ciclo</b> es una construcción en programación que permite repetir el mismo bloque de código varias veces mientras se cumpla una determinada condición.
+                    </p>
+                    <p>
+                        Los ciclos son útiles cuando se necesita:
+                    </p>
+                    <ul>
+                        <li>recorrer los elementos de un arreglo;</li>
+                        <li>realizar una tarea muchas veces (por ejemplo, contar hasta 100);</li>
+                        <li>solicitar la entrada del usuario hasta que introduzca un valor correcto;</li>
+                        <li>automatizar acciones repetitivas.</li>
+                    </ul>
+                    <p>
+                        En JavaScript hay varios tipos principales de ciclos:
+                    </p>
+                    <ul>
+                        <li>for - ciclo con una cantidad conocida de repeticiones de antemano.</li>
+                        <li>while - ciclo con una cantidad desconocida de repeticiones, mientras se cumpla una condición.</li>
+                        <li>do...while - como while, pero el código se ejecuta al menos una vez.</li>
+                        <li>for...in - se utiliza para recorrer las propiedades de un objeto.</li>
+                        <li>for...of - se utiliza para recorrer los valores de objetos iterables (arreglos, cadenas, etc.).</li>
+                    </ul>
+                    <hr>
+                    <p>
+                        El ciclo for es un ciclo universal con un contador controlado. Se usa más comúnmente cuando se sabe de antemano cuántas veces se deben repetir las acciones.
+                    </p>
+                    <p>
+                        Ejemplo:
+                    </p>
+                    <pre><code>
+for (variable; condición; paso) {
+    // cuerpo del ciclo
+}
+                    </code></pre>
+                    <ul>
+                        <li>Se ejecuta el variable (por ejemplo, let i = 0) — esta es la inicialización;</li>
+                        <li>Se evalúa la condición (por ejemplo, i < 5) — si es true, se ejecuta el cuerpo del ciclo;</li>
+                        <li>Después de ejecutar el cuerpo del ciclo, se realiza el paso (por ejemplo, i++ — incremento del contador);</li>
+                        <li>Se vuelve a verificar la condición, y así sucesivamente.</li>
+                    </ul>
+                    <p>
+                        Ejemplo:
+                    </p>
+                    <pre><code>
+for (let i = 1; i <= 3; i++) {
+    console.log(`Iteración número ${i}`);
+}
+
+// Iteración número 1  
+// Iteración número 2  
+// Iteración número 3
+                    </code></pre>
+                    <p>
+                        ¿Cuándo se utiliza el ciclo for?
+                    </p>
+                    <ul>
+                        <li>Cuando se conoce la cantidad exacta de iteraciones.</li>
+                        <li>Al recorrer un arreglo por índices.</li>
+                        <li>Cuando se necesita controlar el paso (por ejemplo, i += 2, i--).</li>
+                    </ul>
+                    <hr>
+                    
+
+
+                </div>
+                <div class="arrow-2">&#9650;</div>
+            </div>
+        </div>
     
 
-    
+
+
+    </main>
+    <script src="script.js"></script>
 </body>
 </html>
