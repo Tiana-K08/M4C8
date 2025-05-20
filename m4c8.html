@@ -441,7 +441,105 @@ console.log(person.age); // 35
             </div>
         </div>
 <!-- 3 question -->
+        <div class="question-answer">
+            <div class="question-wrapper">
+                <h3>3. ¿Qué es una función de flecha?</h3>
+                <div class="arrow down">&#9650;</div>
+            </div>
+            <div class="answer-wrapper close">
+                <div class="answer-contenido">
+                    <p>
+                        &#128204; <b class="large-text">Una función de flecha</b> (arrow function) es una forma más concisa de escribir funciones en JavaScript. Se introdujo en ES6 y se caracteriza por su sintaxis simplificada y su comportamiento especial con respecto al contexto de <b>this</b>.
+                    </p>
+                    <br>
+                    <p>
+                        La sintaxis básica de una función de flecha es la siguiente:
+                    </p>
+                    <pre><code>
+const nameFunction = (parametros) => {
+    // cuerpo de la función
+}
+                    </code></pre>
+                    <p>
+                        O, si la función tiene un solo parámetro, puedes omitir los paréntesis:
+                    </p>
+                    <pre><code>
+const nameFunction = parametro => {
+    // cuerpo de la función
+}
+                    </code></pre>
+                    <p>
+                        Y si la función tiene una sola expresión, puedes omitir las llaves y el return:
+                    </p>
+                    <pre><code>
+const nameFunction = (parametros) => expresion;
+                    </code></pre>
+                    <br>
+                    <p>
+                        Ejemplo de una función de flecha:
+                    </p>
+                    <pre><code>
+const suma = (a, b) => a + b;
+console.log(suma(2, 3)); // 5
+                    </code></pre>
+                    <p>
+                        En este ejemplo, la función <b>suma</b> toma dos parámetros <b>a</b> y <b>b</b>, y devuelve su suma. La sintaxis es más corta y fácil de leer que la forma tradicional de declarar funciones.
+                    </p>
+                    <p>
+                        Ejemplo de una función normal:
+                    </p>
+                    <pre><code>
+function suma(a, b) {
+    return a + b;
+}
+console.log(suma(2, 3)); // 5
+                    </code></pre>
+                    <p>
+                        El resultado de ambas funciones es el mismo: add(2, 3) devolverá 5. Como puedes ver, la función de flecha es más concisa y fácil de leer.
+                    </p>
+                    <br>
+                    <p>
+                        Una de las características más importantes de las funciones de flecha es que no tienen su propio contexto de <b>this</b>. Esto significa que el valor de <b>this</b> dentro de una función de flecha se hereda del contexto en el que se define la función. Esto es diferente a las funciones tradicionales, que crean su propio contexto de <b>this</b>.
+                    </p>
+                    <p>
+                        Ejemplo:
+                    </p>
+                    <pre><code>
+const object = {
+    name: 'Juan',
+    age: 30,
+    greeting: function() {
+        console.log(`Hola, soy ${this.name}`);
+    }
+};
 
+objet.greeting(); // Hola, soy Juan
+                    </code></pre>
+                    <p>
+                        En este ejemplo, la función <b>greeting</b> está definida dentro del objeto <b>object</b> y accede correctamente a la propiedad <b>name</b> usando <b>this</b>. Al ser una función normal (no flecha) y estar invocada como un método del objeto, <b>this</b> hace referencia al propio objeto <b>object</b>, lo que permite acceder a sus propiedades correctamente.
+                    </p>
+                    <br>
+                    <p>
+                        <i class="underlined">¿Cuándo se utiliza una <b>función de flecha?</b></i>
+                    </p>
+                    <ul>
+                        <li>Cuando necesitas una sintaxis más concisa y legible para funciones simples.</li>
+                        <li>Cuando quieres evitar problemas con el contexto de <b>this</b>.</li>
+                        <li>Cuando trabajas con funciones de orden superior (funciones que toman otras funciones como argumentos).</li>
+                        <li>Cuando necesitas una función que no se va a reutilizar en otros lugares.</li>
+                    </ul>
+                    <br>
+                    <p>
+                        Las funciones de flecha son una herramienta poderosa y útil en JavaScript, y su uso se ha vuelto común en el desarrollo moderno. Sin embargo, es importante recordar que no todas las funciones deben ser escritas como funciones de flecha. En algunos casos, las funciones tradicionales pueden ser más adecuadas, especialmente cuando necesitas un contexto de <b>this</b> diferente.
+                    </p>
+                    <div class="img-wrapper">
+                        <img src="img/arrow_function.png" alt="arrow function">
+                    </div>
+                </div>
+                <div class="arrow-2">&#9650;</div>
+            </div>
+        </div>
+<!-- 4 question -->
 
 
     </main>

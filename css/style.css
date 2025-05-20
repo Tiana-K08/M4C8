@@ -173,6 +173,6 @@ p, pre, ul, li, dl, dt, dd {
     }
 
     .flex-container > .img-wrapper {
-        width: 100%;
+        width: 80%;
     }
 }
