@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>M4C7</title>
+    <link rel="stylesheet" href="css/commun.css">
+    <!-- TODO delete -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Preguntas teóricas del Punto de control 7</h1>
+    </header>
+    <main>
+<!-- 1 question -->
+        <div class="question-answer">
+            <div class="question-wrapper">
+                <h3>1. ¿Qué diferencia a Javascript de cualquier otro lenguaje de programación?</h3>
+                <div class="arrow down">&#9650;</div>
+            </div>
+            <div class="answer-wrapper close">
+                <div class="answer-contenido">
+                    <p>
+                        <b>JavaScript (abreviado como JS)</b> es un lenguaje de programación versátil que permite que las páginas web sean interactivas y fáciles de usar. Gracias a él, los sitios web tienen botones, ventanas emergentes, formularios de entrada, reacciones a las acciones del usuario y muchos otros elementos. Sin JavaScript, una página sería estática. Con JavaScript, responde a las acciones del usuario.
+                    </p>
+                    <hr>
+                    <p>
+                        &#128204; Aunque originalmente JavaScript fue creado como un lenguaje para navegadores, hoy en día se utiliza no solo para sitios web, sino también <b>para desarrollar diversos tipos de programas</b>: desde aplicaciones web hasta servidores, aplicaciones móviles y videojuegos.
+                    </p>
+                    <div class="img-wrapper">
+                        <img src="images/js_using.png" alt="Dónde se utiliza JavaScript">
+                    </div>
+                    <p class="title-text">
+                        <strong>Dónde se utiliza JavaScript</strong>
+                    </p>
+                    <dl>
+                        <dt><b>Frontend de aplicaciones web</b></dt>
+                        <dd>
+                            Con JavaScript, los desarrolladores crean aplicaciones web, que son programas que ejecutamos en el navegador, así como la «interfaz externa» de las aplicaciones web, con la que interactúa el usuario al hacer clic en botones, cuadros, menús.<br>
+                            <i>El código de servicios populares como Google Maps, Google Docs, Netflix, eBay está escrito en JavaScript.</i>
+                        </dd>
+
+                        <dt><b>Backend de aplicaciones web</b></dt>
+                        <dd>
+                            Además de la interfaz que ven los usuarios, las aplicaciones web también tienen una parte interna: el backend. Esta es la parte del servidor de la aplicación, donde generalmente se almacenan las bases de datos. JavaScript tiene la plataforma Node.js, que no es un lenguaje de programación independiente, sino un entorno de ejecución del código JavaScript en el servidor. Con ella, se pueden realizar operaciones o acceder a bases de datos.<br>
+                            <i>Empresas conocidas como PayPal y Walmart utilizan JavaScript junto con Node.js para interactuar con sus servidores.</i>
+                        </dd>
+
+                        <dt><b>Aplicaciones móviles</b></dt>
+                        <dd>
+                            JavaScript también se utiliza para desarrollar aplicaciones para iOS y Android. Para ello, existen frameworks especiales: conjuntos de código listos, que sirven como «estructura» de futuras aplicaciones. Los frameworks de JavaScript como React Native ayudan a adaptar el código a las plataformas móviles. Esto permite crear aplicaciones multiplataforma, que funcionan tanto en iOS como en Android, sin necesidad de contratar desarrolladores para cada una de estas plataformas y crear dos versiones de la aplicación.<br>
+                            <i>Las aplicaciones móviles de Groupon y LinkedIn están escritas en JavaScript.</i>
+                        </dd>
+
+                        <dt><b>Aplicaciones de escritorio</b></dt>
+                        <dd>
+                            El popular entorno de desarrollo VS Code fue escrito en el framework Electron y JavaScript.
+                        </dd>
+
+                        <dt><b>Juegos</b></dt>
+                        <dd>
+                            ambién se pueden escribir juegos simples en 2D/3D con JavaScript. Normalmente, estos son juegos de aventura en el navegador.
+                        </dd>
+
+                        <dt><b>Aprendizaje automático</b></dt>
+                        <dd>
+                            El aprendizaje automático suele requerir otros lenguajes de programación, como Python. Sin embargo, a veces también se utiliza JavaScript. Por ejemplo, cuando se crean aplicaciones web, incluidas aquellas que visualizan datos de modelos de aprendizaje automático. O cuando se escribe una página web con un formulario que envía datos a un servidor para ser procesados por un modelo de aprendizaje automático.
+                        </dd>
+
+                        <dt><b>Bases de datos</b></dt>
+                        <dd>
+                            JavaScript tiene su propia herramienta, Mongoose, que permite trabajar con la popular base de datos MongoDB. También existen bases de datos como Clusterpoint, a las que se puede escribir consultas en JavaScript. Además, existe GraphQL, un lenguaje de consultas estructuradas que permite acceder a bases de datos. Funciona con React y otros frameworks populares de JavaScript.
+                        </dd>
+
+                        <dt><b>Internet de las cosas (IoT)</b></dt>
+                        <dd>
+                            JavaScript también se utiliza en el Internet de las cosas (IoT), que es un sistema para intercambiar información entre dispositivos conectados a una red. Ejemplos de estos dispositivos son bien conocidos: relojes inteligentes, rastreadores de actividad, alarmas de incendio. Para ellos, se escriben programas en JavaScript utilizando frameworks como Cylon.js y Johnny-Five.
+                        </dd>
+                    </dl>
+                    <hr>
+                    <p>
+                        &#128204; <b>Comparación de JavaScript con otros lenguajes de programación.</b>
+                    </p>
+                    <div class="table-wrapper">
+                        <table class="table-languages">
+                            <thead>
+                                <tr>
+                                    <th>Criterio</th>
+                                    <th>JavaScript</th>
+                                    <th>Python</th>
+                                    <th>Java</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Área de aplicación</td>
+                                    <td>Desarrollo web frontend y backend</td>
+                                    <td>Ciencia, aprendizaje automático, web, automatización</td>
+                                    <td>Aplicaciones empresariales, Android, web</td>
+                                </tr>
+                                <tr>
+                                    <td>Entorno de ejecución</td>
+                                    <td>Navegador, Node.js</td>
+                                    <td>Intérprete (CPython, PyPy)</td>
+                                    <td>JVM (Java Virtual Machine)</td>
+                                </tr>
+                                <tr>
+                                    <td>Sintaxis</td>
+                                    <td>Similar a C, tipado dinámico</td>
+                                    <td>Simple y legible, tipado dinámico</td>
+                                    <td>Tipado estricto, POO estricta</td>
+                                </tr>
+                                <tr>
+                                    <td>Velocidad de ejecución</td>
+                                    <td>Rápido (especialmente en V8)</td>
+                                    <td>Más lento que JavaScript y Java</td>
+                                    <td>Alto rendimiento</td>
+                                </tr>
+                                <tr>
+                                    <td>Plataformas populares</td>
+                                    <td>React, Node.js, Vue</td>
+                                    <td>Django, Flask, TensorFlow</td>
+                                    <td>Spring, Android SDK</td>
+                                </tr>
+                                <tr>
+                                    <td>Tipado</td>
+                                    <td>Dinámico</td>
+                                    <td>Dinámico</td>
+                                    <td>Estático</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="arrow-2">&#9650;</div>
+            </div>
+        </div>
+<!-- 2 question -->
+        <div class="question-answer">
+            <div class="question-wrapper">
+                <h3>2. ¿Cuáles son algunos tipos de datos JS?</h3>
+                <div class="arrow down">&#9650;</div>
+            </div>
+            <div class="answer-wrapper close">
+                <div class="answer-contenido">
+                    <p>
+                        Cuando escribimos programas en cualquier lenguaje, incluido JavaScript, trabajamos constantemente con datos. Estos datos pueden ser de diferentes tipos: números, texto, objetos, etc. Para que JavaScript entienda correctamente con qué tipo de datos está trabajando, los clasifica en tipos de datos.
+                    </p>
+                    <div class="img-wrapper">
+                        <img src="images/js_data_types.png" alt="Data types JS">
+                    </div>
+                    <hr>
+                    <p>
+                        &#128204; Los datos alfanuméricos en JavaScript se definen con el tipo de dato <b>cadena</b> <i>(string)</i>. Una cadena puede contener un solo carácter, muchos caracteres o no contener ninguno (una cadena vacía).
+                    </p>
+                    <p>
+                        Ejemplo:
+                    </p>
+                    <pre><code>
+'Hello, World!'
+"Hello, World!"
+                    </code></pre>
+                    <p>
+                        Cualquier cadena en JavaScript debe estar encerrada entre comillas simples o dobles. No existe una regla estricta sobre cuál tipo de comillas usar. El estándar de codificación de Airbnb recomienda usar comillas simples. Algunas fuentes también sugieren usar comillas simples para el código JavaScript y comillas dobles para el código HTML, pero esto depende de la preferencia personal de cada desarrollador. Lo importante es que el estilo se mantenga consistente en todo el documento.
+                    </p>
+                    <hr>
+                    <p>
+                        &#128204; El tipo de dato <b>número</b> <i>(number)</i> incluye tanto enteros (positivos y negativos) como números reales (decimales, con punto flotante).
+                    </p>
+                    <p>
+                        Además de los números comunes, este tipo de dato también incluye lo que se conoce como valores numéricos especiales:
+                    </p>
+                    <ul>
+                        <li><b>Infinity</b> representa la infinitud matemática, que es mayor que cualquier número. En programación, es bien conocida la «división por 0». En lenguajes de bajo nivel, esto provoca un fallo en el programa y la necesidad de reiniciarlo. Sin embargo, JavaScript sigue funcionando y devuelve Infinity.</li>
+                        <li><b>-Infinity</b> representa la infinitud matemática negativa, que es menor que cualquier número. Es el resultado de dividir un número negativo entre 0.</li>
+                        <li><b>NaN</b> <i>(not a number)</i> significa error de cálculo, no es un número. Es el resultado de una operación matemática incorrecta o indefinida. Cualquier operación matemática que contenga NaN devuelve NaN. Hay una sola excepción: NaN elevado a la potencia de 0 es igual a 1.</li>
+                    </ul>
+                    <p>
+                        Ejemplo:
+                    </p>
+                    <pre><code>
+let age = 25;
+let price = 99.99;
+                    </code></pre>
+                    <hr>
+                    <p>
+                        &#128204; En JavaScript, el tipo de dato numérico solo puede trabajar dentro del rango de números ±(253-1). Fuera de este rango, se producirá un error de precisión, ya que no todos los dígitos caben en una memoria de 64 bits fija. En la mayoría de los casos, el rango seguro de números es suficiente, pero a veces necesitamos trabajar con números realmente gigantes sin ningún límite. En ese caso, se utiliza el tipo de dato <b>bigint</b>. Este tipo permite trabajar con enteros de longitud arbitraria. Para crear un valor de tipo bigint, es necesario agregar una <i>n</i> al final del literal numérico.
+                    </p>
+                    <p>
+                        Ejemplo:
+                    </p>
+                    <pre><code>
+console.log(5465455647852456554235); // 5.465455647852457e+21
+console.log(5465455647852456554235n); // 5465455647852456554235n
+                    </code></pre>
+                    <p>
+                        Actualmente, el tipo de dato bigint solo es compatible con los navegadores Firefox, Chrome, Edge y Safari.
+                    </p>
+                    <hr>
+                    <p>
+                        &#128204; El tipo de dato <b>booleano</b> <i>(boolean)</i> solo puede tomar dos valores: <i>true</i> (sí, verdadero) o <i>false</i> (no, falso).
+                    </p>
+                    <p>
+                        Ejemplo:
+                    </p>
+                    <pre><code>
+console.log(5 > 2); // true
+console.log(5 &lt; 2); // false
+                    </code></pre>
+                    <hr>
+                    <p>
+                        &#128204; El valor especial <b>null</b> no pertenece a ninguno de los tipos de datos mencionados anteriormente. Forma un tipo de dato independiente. En JavaScript, null no representa un valor numérico cero ni una referencia a un objeto inexistente, como ocurre en algunos otros lenguajes de programación. Es un valor especial que indica: nada, vacío, valor desconocido.
+                    </p>
+                    <p>
+                        Ejemplo:
+                    </p>
+                    <pre><code>
+let user = null; // el usuario no está autorizado
+                    </code></pre>
+                    <hr>
+                    <p>
+                        &#128204; El valor especial <b>undefined</b> también forma un tipo de dato independiente. Indica que algo no está definido, es decir, que no se ha asignado un valor. Este valor puede ser establecido automáticamente por defecto o asignado manualmente (lo cual no se recomienda).
+                    </p>
+                    <p>
+                        Ejemplo:
+                    </p>
+                    <pre><code>
+let item;
+console.log(item); // undefined   
+                    </code></pre>
+                    <hr>
+                    <p>
+                        &#128204; <b>Symbol</b> es un tipo de dato primitivo, único e inmutable, que se utiliza para crear identificadores únicos.
+                    </p>
+                    <p>
+                        Ejemplo:
+                    </p>
+                    <pre><code>
+let mySym = Symbol('id');
+console.log(mySym) // id  
+                    </code></pre>
+                    <hr>
+                    <p>
+                        &#128204; El tipo de dato <b>objeto</b> <i>(object)</i> es más complejo en comparación con los tipos de datos primitivos mencionados anteriormente. Puede almacenar colecciones de datos o estructuras más complejas. Guarda información en forma de pares clave-valor (key-value).
+                    </p>
+                    <p>
+                        Ejemplo:
+                    </p>
+                    <pre><code>
+let person = {
+    name: 'Anne',
+    age: 25,
+    isStudent: true
+};
+console.log(person.name); // Anne
+                    </code></pre>
+                    <hr>
+                    <p>
+                        &#128204; Un <b>array</b> es una lista ordenada de valores (esencialmente, un objeto con índices numéricos).
+                    </p>
+                    <p>
+                        Ejemplo:
+                    </p>
+                    <pre><code>
+let fruits = ['apple', 'banana', 'pear'];
+console.log(fruits[1]); // banana      
+                    </code></pre>
+                    <hr>
+                    <p>
+                        &#128204; Una <b>función</b> <i>(function)</i> es un objeto que se puede ejecutar.
+                    </p>
+                    <p>
+                        Ejemplo:
+                    </p>
+                    <pre><code>
+function greet(name) {
+    console.log('Hola, ' + name);
+}
+greet("Anne"); // Hola, Anne           
+                    </code></pre>
+                </div>
+                <div class="arrow-2">&#9650;</div>
+            </div>
+        </div>
+<!-- 3 question -->
+        <div class="question-answer">
+            <div class="question-wrapper">
+                <h3>3. ¿Cuáles son las tres funciones de String en JS?</h3>
+                <div class="arrow down">&#9650;</div>
+            </div>
+            <div class="answer-wrapper close">
+                <div class="answer-contenido">
+                    <p>
+                        JavaScript nos proporciona una gran cantidad de funciones integradas (métodos) que permiten analizar, modificar o formatear cadenas de texto. En este material, vamos a ver tres funciones (o, más exactamente, métodos) del objeto String, que se utilizan con mayor frecuencia en la práctica real:
+                    </p>
+                    <hr>
+                    <p>
+                        &#128204; El método <b>length</b> muestra cuántos caracteres hay en una cadena. Esto incluye espacios, signos de puntuación, caracteres especiales e incluso emojis.
+                    </p>
+                    <p>
+                        Ejemplo:
+                    </p>
+                    <pre><code>
+let message = '¡Hola, mundo!';
+console.log(message.length); // 13          
+                    </code></pre>
+                    <hr>
+                    <p>
+                        &#128204; El método <b>includes()</b> permite verificar si un valor está contenido dentro de una cadena. Devuelve <i>true</i> si lo contiene y <i>false</i> si no.
+                    </p>
+                    <p>
+                        Ejemplo:
+                    </p>
+                    <pre><code>
+let text = '¡JavaScript es genial!';
+console.log(text.includes('genial'));  // true
+console.log(text.includes('Python'));  // false         
+                    </code></pre>
+                    <hr>
+                    <p>
+                        &#128204; <b>toLowerCase()</b> convierte todas las letras de una cadena a minúsculas y <b>toUpperCase()</b> convierte todas las letras de una cadena a mayúsculas.
+                    </p>
+                    <p>
+                        Ejemplo:
+                    </p>
+                    <pre><code>
+let name = "Anne";
+console.log(name.toLowerCase()); // anne
+console.log(name.toUpperCase()); // ANNE        
+                    </code></pre>
+                    <hr>
+                    <p>
+                        Los métodos length, includes(), toLowerCase() y toUpperCase() son solo una pequeña parte de lo que el tipo String puede hacer en JavaScript. De hecho, existen decenas de métodos integrados que permiten:
+                    </p>
+                    <ul>
+                        <li>recortar cadenas (slice, substring)</li>
+                        <li>dividir cadenas en partes (split),</li>
+                        <li>reemplazar partes de una cadena (replace),</li>
+                        <li>eliminar espacios innecesarios (trim),</li>
+                        <li>encontrar posiciones de caracteres (indexOf, lastIndexOf)</li>
+                    </ul>
+                    <p>
+                        Estas herramientas hacen que trabajar con texto sea cómodo, flexible y potente, especialmente en el desarrollo web, donde las cadenas de texto están por todas partes: en formularios, títulos, mensajes, URLs y datos.
+                    </p>
+                </div>
+                <div class="arrow-2">&#9650;</div>
+            </div>
+        </div>
+<!-- 4 question -->
+        <div class="question-answer">
+            <div class="question-wrapper">
+                <h3>4. ¿Qué es un condicional?</h3>
+                <div class="arrow down">&#9650;</div>
+            </div>
+            <div class="answer-wrapper close">
+                <div class="answer-contenido">
+                    <p>
+                        En programación, a menudo surge la necesidad de tomar decisiones. Por ejemplo, si el usuario introduce la contraseña correcta, se le permite acceder al sistema; si no, se muestra un error. Estas situaciones las resolvemos mediante <b>condiciones</b>: estructuras especiales que permiten ejecutar diferentes bloques de código dependiendo de ciertas circunstancias.
+                    </p>
+                    <p>
+                        La condición le dice a la computadora: "si ocurre esto, haz aquello; de lo contrario, haz otra cosa". Gracias a las condiciones, el programa se vuelve inteligente: responde a los datos y cambia su comportamiento según la situación. Esta es la base de toda lógica en un programa: si algo es verdadero, se hace una cosa; si no, se hace otra.
+                    </p>
+                    <hr>
+                    <p>
+                        &#128204; La forma más básica de escribir una condición es usando el operador <b>if</b>. Esto significa: si la expresión es verdadera, se ejecuta el código dentro de las llaves.
+                    </p>
+                    <div class="img-wrapper-vertical">
+                        <img src="images/if.png" alt="Condición if">
+                    </div>
+                    <p>
+                        Ejemplo:
+                    </p>
+                    <pre><code>
+let age = 20;
+
+if (age >= 18) {
+    console.log('Usted es mayor de edad.');
+}            
+                    </code></pre>
+                    <hr>
+                    <p>
+                        &#128204; Cuando se necesita elegir entre dos acciones - una si se cumple la condición y otra si no se cumple — se utilizan los operadores condicionales con alternativa <b>if / else</b>.
+                    </p>
+                    <div class="img-wrapper-vertical">
+                        <img src="images/if_else.png" alt="Condición if / else">
+                    </div>
+                    <p>
+                        Ejemplo:
+                    </p>
+                    <pre><code>
+let isLoggedIn = false;
+
+if (isLoggedIn) {
+    console.log('¡Bienvenido!');
+} else {
+    console.log('Por favor, inicie sesión.');
+}              
+                    </code></pre>
+                    <hr>
+                    <p>
+                        &#128204; Si hay más de dos opciones, se pueden agregar verificaciones adicionales utilizando los operadores de condiciones múltiples <b>if / else if / else</b>.
+                    </p>
+                    <div class="img-wrapper-vertical">
+                        <img src="images/if_else_if.png" alt="Condición if / else if / else">
+                    </div>
+                    <p>
+                        Ejemplo:
+                    </p>
+                    <pre><code>
+let score = 85;
+
+if (score >= 90) {
+    console.log('Calificación: excelente');
+} else if (score >= 70) {
+    console.log('Calificación: bien');
+} else {
+    console.log('Calificación: satisfactorio');
+}                      
+                    </code></pre>
+                    <hr>
+                    <p>
+                        &#128204; Cuando tenemos muchos valores diferentes para una misma expresión, en lugar de usar una gran cantidad de <b>if / else if … / else</b>, podemos utilizar la estructura <b>switch</b>.
+                    </p>
+                    <div class="img-wrapper-vertical">
+                        <img src="images/switch.png" alt="Condición switch">
+                    </div>
+                    <p>
+                        Ejemplo:
+                    </p>
+                    <pre><code>
+let day = 'miércoles';
+
+switch (day) {
+    case 'lunes':
+        console.log('Inicio de la semana');
+        break;
+    case 'miércoles':
+        console.log('Mitad de la semana');
+        break;
+    case 'viernes':
+        console.log('Final de la semana');
+        break;
+    default:
+        console.log('Día normal');
+}                         
+                    </code></pre>
+                    <p>
+                        Cómo funciona switch:
+                    </p>
+                    <ul>
+                        <li>
+                            El valor se compara con cada <i>case</i> mediante igualdad estricta (===).
+                        </li>
+                        <li>
+                            Cuando se encuentra una coincidencia, se ejecuta el bloque correspondiente.
+                        </li>
+                        <li>
+                            El <i>break</i> es necesario para detener la ejecución después de la primera coincidencia. Sin él, la ejecución continuará hacia los siguientes <i>case</i>.
+                        </li>
+                    </ul>
+                </div>
+                <div class="arrow-2">&#9650;</div>
+            </div>
+        </div>
+<!-- 5 question -->
+        <div class="question-answer">
+            <div class="question-wrapper">
+                <h3>5. ¿Qué es un operador ternario?</h3>
+                <div class="arrow down">&#9650;</div>
+            </div>
+            <div class="answer-wrapper close">
+                <div class="answer-contenido">
+                    <p>
+                        &#128204; El operador ternario es una forma corta de escribir una condición. Su función es elegir uno de dos valores dependiendo de si se cumple la condición o no. Es una versión abreviada de <i>if / else</i> que es adecuada para verificaciones simples y asignación de valores. Se llama "ternario" porque trabaja con tres operandos:
+                    </p>
+                    <ul>
+                        <li>la condición</li>
+                        <li>el valor si la condición es verdadera (true)</li>
+                        <li>el valor si la condición es falsa (false)</li>
+                    </ul>
+                    <p>
+                        Ejemplo:
+                    </p>
+                    <pre><code>
+let age = 17;
+let message = age >= 18 ? 'Acceso permitido' : 'Acceso denegado';
+console.log(message); // Acceso denegado
+                    </code></pre>
+                    <p>
+                        La misma lógica con <i>if / else</i> se vería así:
+                    </p>
+                    <pre><code>
+let age = 17;
+
+if (age >= 18) {
+    message = 'Acceso permitido';
+} else {
+    message = 'Acceso denegado';
+}
+
+console.log(message); // Acceso denegado                                             
+                    </code></pre>
+                    <p>
+                        Como puedes ver, el operador ternario es más corto y es ideal para condiciones simples.
+                    </p>
+                </div>
+                <div class="arrow-2">&#9650;</div>
+            </div>
+        </div>
+<!-- 6 question -->
+        <div class="question-answer">
+            <div class="question-wrapper">
+                <h3>6. ¿Cuál es la diferencia entre una declaración de función y una expresión de función?</h3>
+                <div class="arrow down">&#9650;</div>
+            </div>
+            <div class="answer-wrapper close">
+                <div class="answer-contenido">
+                    <p>
+                        Las funciones son uno de los bloques fundamentales en JavaScript. Permiten agrupar código, reutilizarlo varias veces, aceptar parámetros, devolver valores y hacer que el programa sea más organizado y legible. En JavaScript, hay dos formas principales de crear funciones:
+                    </p>
+                    <ul>
+                        <li>Declaración de función <i>(Function Declaration)</i></li>
+                        <li>Expresión de función <i>(Function Expression)</i></li>
+                    </ul>
+                    <p>
+                        A simple vista se parecen, pero funcionan de manera diferente, especialmente en lo que respecta al orden de ejecución del código.
+                    </p>
+                    <hr>
+                    <p>
+                        &#128204; La <b>declaración de función</b> es la forma clásica de crear una función. Esta función tiene un nombre y puede ser llamada en cualquier parte del archivo, incluso antes de su definición.
+                    </p>
+                    <p>
+                        Ejemplo:
+                    </p>
+                    <pre><code>
+function greet(name) {
+    console.log('Hola, ' + name);
+}
+                          
+greet('Anne'); // Hola, Anne     
+                    </code></pre>
+                    <p>
+                        Ventaja principal: el <b>hoisting</b> — puedes llamar a este tipo de función incluso antes de que esté definida en el código, porque JavaScript “eleva” (hoists) las declaraciones de función al inicio del ámbito.
+                    </p>
+                    <hr>
+                    <p>
+                        &#128204; La <b>expresión de función</b> se crea como un valor y se asigna a una variable. Puede ser una función con nombre o una función anónima.
+                    </p>
+                    <p>
+                        Ejemplo:
+                    </p>
+                    <pre><code>
+const greet = function(name) {
+    console.log('Hola, ' + name);
+};
+                          
+greet('Olga'); // Hola, Olga            
+                    </code></pre>
+                    <p>
+                        Diferencia clave: no se puede llamar a esta función antes de su creación. Si intentas hacerlo antes de su declaración, se producirá un error porque las expresiones de función no se elevan (no hacen hoisting) como las declaraciones.
+                    </p>
+                </div>
+                <div class="arrow-2">&#9650;</div>
+            </div>
+        </div>
+<!-- 7 question -->
+        <div class="question-answer">
+            <div class="question-wrapper">
+                <h3>7. ¿Qué es la palabra clave "this" en JS?</h3>
+                <div class="arrow down">&#9650;</div>
+            </div>
+            <div class="answer-wrapper close">
+                <div class="answer-contenido">
+                    <p>
+                        &#128204; La palabra clave <b>this</b> es una referencia al contexto de ejecución actual. Es como un puntero que indica a qué objeto pertenece el fragmento de código en ese momento específico.
+                    </p>
+                    <p>
+                        <b>this</b> se utiliza con frecuencia cuando:
+                    </p>
+                    <ul>
+                        <li>trabajas con objetos y métodos</li>
+                        <li>necesitas acceder a las propiedades del objeto actual</li>
+                        <li>quieres crear funciones reutilizables que se comporten según el contexto</li>
+                        <li>estás escribiendo clases, manejadores de eventos o callbacks</li>
+                    </ul>
+                    <p>
+                        El contexto de ejecución es el "entorno" en el que se ejecuta el código. <b>this</b> hace referencia al objeto que posee la función en el momento de su ejecución.
+                    </p>
+                    <p>
+                        Si usas <b>this</b> fuera de cualquier función u objeto, se refiere al objeto global: en el navegador es <i>window</i>, en Node.js es <i>global</i>.
+                    </p>
+                    <p>
+                        Si la función está dentro de un objeto, <b>this</b> se refiere a ese objeto.
+                    </p>
+                    <p>
+                        Ejemplo:
+                    </p>
+                    <pre><code>
+const user = {
+    name: 'Ana',
+    sayHi() {
+        console.log('Hola, ' + this.name);
+    }
+};
+                          
+user.sayHi(); // Hola, Ana    
+                    </code></pre>
+                    <p>
+                        Aquí, <i>this.name</i> se refiere a <i>user.name</i>, porque la función fue llamada a través del objeto <i>user</i>.
+                    </p>
+                </div>
+                <div class="arrow-2">&#9650;</div>
+            </div>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
