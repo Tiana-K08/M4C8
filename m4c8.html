@@ -540,6 +540,124 @@ objet.greeting(); // Hola, soy Juan
             </div>
         </div>
 <!-- 4 question -->
+        <div class="question-answer">
+            <div class="question-wrapper">
+                <h3>4. ¿Qué es la deconstrucción de variables?</h3>
+                <div class="arrow down">&#9650;</div>
+            </div>
+            <div class="answer-wrapper close">
+                <div class="answer-contenido">
+                    <p>
+                        <b class="large-text">La deconstrucción de variables</b> (destructuring) es una característica de JavaScript que permite extraer valores de arreglos u objetos y asignarlos a variables individuales de manera más concisa y legible. Esta característica fue introducida en ES6 y se ha vuelto muy popular entre los desarrolladores.
+                    </p>
+                    <p>
+                        Supongamos que recibes un arreglo u objeto con varios valores y quieres asignar cada uno a su propia variable. En lugar de usar una larga cadena de asignaciones, puedes utilizar la desestructuración, que lo hace más corto y «limpio».
+                    </p>
+                    <hr>
+                    <p>
+                        &#128204; Al usar <b class="large-text">la deconstrucción de arreglos</b>, el orden de los elementos tiene un papel fundamental. Dado que los arreglos son colecciones ordenadas, sus valores se asignan a las variables según su posición. Esto significa que el primer valor del arreglo se asignará a la primera variable, el segundo al segundo, y así sucesivamente. Este enfoque resulta especialmente útil cuando conoces bien la estructura del arreglo y quieres extraer rápidamente los datos necesarios sin código innecesario.
+                    </p>
+                    <br>
+                    <p>
+                        Ejemplo sin deconstrucción:
+                    </p>
+                    <pre><code>
+const rgb = [255, 100, 50];
+
+const red = rgb[0];
+const green = rgb[1];
+const blue = rgb[2];
+
+console.log(`Rojo: ${red}, Verde: ${green}, Azul: ${blue}`);
+// Rojo: 255, Verde: 100, Azul: 50
+                    </code></pre>
+                    <p>
+                        En este ejemplo, se asignan los valores del arreglo <b>rgb</b> a las variables <b>red</b>, <b>green</b> y <b>blue</b> utilizando el índice de cada elemento. Esto puede volverse tedioso si el arreglo tiene muchos elementos.
+                    </p>
+                    <br>
+                    <p>
+                        Ejemplo con deconstrucción:
+                    </p>
+                    <pre><code>
+const rgb = [255, 100, 50];
+
+const [red, green, blue] = rgb;
+
+console.log(`Rojo: ${red}, Verde: ${green}, Azul: ${blue}`);
+// Rojo: 255, Verde: 100, Azul: 50
+                    </code></pre>
+                    <p>
+                        En este ejemplo, la deconstrucción de arreglos permite asignar los valores del arreglo <b>rgb</b> directamente a las variables <b>red</b>, <b>green</b> y <b>blue</b> en una sola línea de código.
+                    </p>
+                    <hr>
+                    <p>
+                        &#128204; Al usar <b class="large-text">la deconstrucción de objetos</b>, el orden no importa. Dado que los objetos son colecciones no ordenadas de pares clave-valor, puedes extraer los valores utilizando las claves correspondientes. Esto significa que puedes asignar valores a variables sin preocuparte por el orden en que aparecen en el objeto. Este enfoque es especialmente útil cuando trabajas con objetos complejos y necesitas acceder a propiedades específicas sin importar su posición.
+                    </p>
+                    <br>
+                    <p>
+                        Ejemplo sin deconstrucción:
+                    </p>
+                    <pre><code>
+const person = {
+    name: 'Juan',
+    age: 30,
+    city: 'Madrid'
+};
+
+const name = person.name;
+const age = person.age;
+const city = person.city;
+
+console.log(`Nombre: ${name}, Edad: ${age}, Ciudad: ${city}`);
+// Nombre: Juan, Edad: 30, Ciudad: Madrid
+                    </code></pre>
+                    <p>
+                        En este ejemplo, se asignan los valores del objeto <b>person</b> a las variables <b>name</b>, <b>age</b> y <b>city</b> utilizando la clave de cada propiedad. Esto puede volverse tedioso si el objeto tiene muchas propiedades.
+                    </p>
+                    <br>
+                    <p>
+                        Ejemplo con deconstrucción:
+                    </p>
+                    <pre><code>
+const person = {
+    name: 'Juan',
+    age: 30,
+    city: 'Madrid'
+};
+
+const { name, age, city } = person;
+
+console.log(`Nombre: ${name}, Edad: ${age}, Ciudad: ${city}`);
+// Nombre: Juan, Edad: 30, Ciudad: Madrid
+                    </code></pre>
+                    <p>
+                        En este ejemplo, la deconstrucción de objetos permite asignar los valores del objeto <b>person</b> directamente a las variables <b>name</b>, <b>age</b> y <b>city</b> en una sola línea de código.
+                    </p>
+                    <hr>
+                    <p>
+                        <b class="large-text">La deconstrucción de variables</b> es una característica poderosa y útil en JavaScript que simplifica el proceso de asignación de valores a variables. Al utilizar la desestructuración, puedes escribir un código más limpio y legible, lo que facilita la comprensión y el mantenimiento del mismo.
+                    </p>
+                </div>
+                <div class="arrow-2">&#9650;</div>
+            </div>
+        </div>
+<!-- 5 question -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
     </main>
