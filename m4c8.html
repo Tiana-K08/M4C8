@@ -635,13 +635,142 @@ console.log(`Nombre: ${name}, Edad: ${age}, Ciudad: ${city}`);
                     </p>
                     <hr>
                     <p>
-                        <b class="large-text">La deconstrucción de variables</b> es una característica poderosa y útil en JavaScript que simplifica el proceso de asignación de valores a variables. Al utilizar la desestructuración, puedes escribir un código más limpio y legible, lo que facilita la comprensión y el mantenimiento del mismo.
+                        <b>La deconstrucción de variables</b> es una característica poderosa y útil en JavaScript que simplifica el proceso de asignación de valores a variables. Al utilizar la desestructuración, puedes escribir un código más limpio y legible, lo que facilita la comprensión y el mantenimiento del mismo.
                     </p>
                 </div>
                 <div class="arrow-2">&#9650;</div>
             </div>
         </div>
 <!-- 5 question -->
+        <div class="question-answer">
+            <div class="question-wrapper">
+                <h3>5. ¿Qué hace el operador de extensión en JS?</h3>
+                <div class="arrow down">&#9650;</div>
+            </div>
+            <div class="answer-wrapper close">
+                <div class="answer-contenido">
+                    <p>
+                        <b class="large-text">El operador de expansión</b> en JavaScript (también conocido como el <b class="large-text">spread</b> operator) es una sintaxis <b>...</b> que «despliega» (expande) los elementos de un arreglo o las propiedades de un objeto en lugares donde se esperan valores individuales.
+                    </p>
+                    <div class="img-wrapper">
+                        <img src="img/spread.png" alt="operador spread">
+                    </div>
+                    <p>
+                        <i class="underlined">El operador de extensión se utiliza principalmente en dos contextos:</i>
+                    </p>
+                    <ul>
+                        <li>Al crear nuevos arreglos u objetos, el operador de extensión permite combinar varios arreglos u objetos en uno solo, o copiar un arreglo u objeto existente.</li>
+                        <li>Al pasar argumentos a funciones, el operador de extensión permite pasar los elementos de un arreglo como argumentos individuales a una función.</li>
+                    </ul>
+                    <hr>
+                    <p>
+                        &#128204; Al usar el <b>operador de extensión con arreglos</b>, puedes combinar varios arreglos en uno solo, copiar un arreglo o agregar elementos a un arreglo existente. Además, <b>spread</b> permite expandir un arreglo en una lista de argumentos para una función.
+                    </p>
+                    <br>
+                    <p>
+                        Ejemplo de <b>combinación de arreglos</b>:
+                    </p>
+                    <pre><code>
+const arr1 = [1, 2, 3];
+const arr2 = [4, 5, 6];
+
+const combinedArr = [...arr1, ...arr2];
+console.log(combinedArr); // [1, 2, 3, 4, 5, 6]
+                    </code></pre>
+                    <p>
+                        En este ejemplo, el operador de extensión se utiliza para combinar los arreglos <b>arr1</b> y <b>arr2</b> en un nuevo arreglo llamado <b>combinedArr</b>.
+                    </p>
+                    <br>
+                    <p>
+                        Ejemplo de <b>copia de un arreglo</b>:
+                    </p>
+                    <pre><code>
+const arr1 = [1, 2, 3];
+
+const arr2 = [...arr1];
+console.log(arr2); // [1, 2, 3]
+                    </code></pre>
+                    <p>
+                        En este ejemplo, el operador de extensión se utiliza para crear una copia del arreglo <b>arr1</b> en un nuevo arreglo llamado <b>arr2</b>.
+                    </p>
+                    <br>
+                    <p>
+                        Ejemplo de <b>agregar elementos a un arreglo</b>:
+                    </p>
+                    <pre><code>
+const arr1 = [1, 2, 3];
+const arr2 = [4, 5, 6];
+
+const combinedArr = [0, ...arr1, ...arr2, 7];
+console.log(combinedArr); // [0, 1, 2, 3, 4, 5, 6, 7]
+                    </code></pre>
+                    <p>
+                        En este ejemplo, el operador de extensión se utiliza para agregar elementos al centro del nuevo arreglo <b>combinedArr</b>.
+                    </p>
+                    <br>
+                    <p>
+                        Ejemplo de <b>pasar argumentos a una función</b>:
+                    </p>
+                    <pre><code>
+const numbers = [1, 2, 3];
+const sum = (a, b, c) => a + b + c;
+
+const result = sum(...numbers);
+console.log(result); // 6
+                    </code></pre>
+                    <p>
+                        En este ejemplo, el operador de extensión se utiliza para pasar los elementos del arreglo <b>numbers</b> como argumentos individuales a la función <b>sum</b>.
+                    </p>
+                    <hr>
+                    <p>
+                        &#128204; Al usar <b>el operador de expansión con objetos</b>, puedes copiar un objeto existente, combinar varios objetos en uno solo o agregar nuevas propiedades a un objeto.
+                    </p>
+                    <br>
+                    <p>
+                        Ejemplo de <b>copia de un objeto</b>:
+                    </p>
+                    <pre><code>
+const obj1 = { a: 1, b: 2 };
+
+const obj2 = { ...obj1 };
+console.log(obj2); // { a: 1, b: 2 }
+                    </code></pre>
+                    <p>
+                        En este ejemplo, el operador de extensión se utiliza para crear una copia del objeto <b>obj1</b> en un nuevo objeto llamado <b>obj2</b>.
+                    </p>
+                    <br>
+                    <p>
+                        Ejemplo de <b>combinación de objetos</b>:
+                    </p>
+                    <pre><code>
+const obj1 = { a: 1, b: 2 };
+const obj2 = { c: 3, d: 4 };
+
+const combinedObj = { ...obj1, ...obj2 };
+console.log(combinedObj); // { a: 1, b: 2, c: 3, d: 4 }
+                    </code></pre>
+                    <p>
+                        En este ejemplo, el operador de extensión se utiliza para combinar los objetos <b>obj1</b> y <b>obj2</b> en un nuevo objeto llamado <b>combinedObj</b>.
+                    </p>
+                    <br>
+                    <p>
+                        Ejemplo de <b>agregar propiedades a un objeto</b>:
+                    </p>
+                    <pre><code>
+const user = { name: 'Olga' };
+const updatedUser = { ...user, age: 30 };
+
+console.log(updatedUser); // { name: 'Olga', age: 30 }
+                    </code></pre>
+                    <p>
+                        En este ejemplo, el operador de extensión se utiliza para agregar propiedades al nuevo objeto <b>updatedUser</b>.
+                    </p>
+                </div>
+                <div class="arrow-2">&#9650;</div>
+            </div>
+        </div>
+<!-- 5 question -->       
+
 
 
 
