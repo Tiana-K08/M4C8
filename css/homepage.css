@@ -43,7 +43,7 @@ header > p {
     background-color: #fff5b7;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
 }
 
@@ -52,8 +52,19 @@ header > p {
     font-size: 1.7em;
 }
 
+.card-container > .front-wrapper p {
+    font-size: 1.2em;
+    margin-top: 30px;
+    margin-bottom: 25px;
+}
+
 .card-container:hover > .front-wrapper {
     transform: translate(-35px, -35px);
+}
+
+.card-container:hover > .front-wrapper p {
+    color: #fff5b7;
+    transition: 0.3s;
 }
 
 /* Back styles */
