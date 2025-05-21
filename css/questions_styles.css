@@ -2,6 +2,7 @@ main {
     margin-top: 10px;
 }
 
+/* Questions blocks */
 .question-wrapper {
     margin: 5px;
     padding: 10px;
@@ -24,6 +25,7 @@ main {
     transform: rotate(-180deg);
 }
 
+/* Answers blocks */
 .answer-wrapper {
     margin: 0 5px;
     padding: 0 10px;
@@ -47,6 +49,7 @@ main {
     cursor: pointer;
 }
 
+/* Content styles */
 .answer-contenido {
     padding: 10px 8vw;
 }
@@ -60,28 +63,6 @@ p, pre, ul, li, dl, dt, dd {
     text-align: justify;
 }
 
-.answer-contenido .img-wrapper {
-    width: 50vw;
-    min-width: 200px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.answer-contenido .img-wrapper-vertical {
-    width: 35vw;
-    min-width: 200px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.answer-contenido img {
-    width: 100%;
-}
-
 .answer-contenido .title-text {
     text-align: center;
 }
@@ -89,17 +70,6 @@ p, pre, ul, li, dl, dt, dd {
 .answer-contenido dd {
     margin: 0 0 10px 0;
     text-align: justify
-}
-
-.answer-contenido .table-languages {
-    border-collapse: collapse;
-    width: 100%;
-}
-
-.table-languages th, .table-languages td {
-    border: 1px solid #333333;
-    padding: 8px;
-    font-size: clamp(1px, 1vw, 16px);
 }
 
 .answer-contenido hr {
@@ -121,18 +91,6 @@ p, pre, ul, li, dl, dt, dd {
     font-size: clamp(1px, 3vw, 16px);;
 }
 
-.flex-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 60px;
-}
-
-.flex-container > .img-wrapper {
-    width: 40%;
-    /* margin: 0; */
-}
-
 .underlined {
     text-decoration: underline;
 }
@@ -141,17 +99,52 @@ p, pre, ul, li, dl, dt, dd {
     font-size: 1.1em;
 }
 
+/* Tables styles */
+.answer-contenido .table-languages {
+    border-collapse: collapse;
+    width: 100%;
+}
 
+.table-languages th, .table-languages td {
+    border: 1px solid #333333;
+    padding: 8px;
+    font-size: clamp(1px, 1vw, 16px);
+}
 
+/* Images styles */
+.answer-contenido .img-wrapper {
+    width: 55%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
 
-@media (max-width: 768px) {
-    .flex-container {
-        flex-direction: column;
-        align-items: center;
-        gap: 0;
-    }
+.answer-contenido .img-wrapper-vertical {
+    width: 40%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
 
-    .flex-container > .img-wrapper {
-        width: 80%;
-    }
+.answer-contenido img {
+    width: 100%;
+}
+
+.flex-vertical, .flex-horizontal {
+    display: flex;
+    justify-content: space-between;
+    gap: 60px;
+    align-items: center;
+}
+
+.flex-vertical > .img-wrapper {
+    width: 25%;
+    margin: 10px 0 0 0;
+}
+
+.flex-horizontal > .img-wrapper {
+    width: 80%;
+    margin: 15px 0 0 0;
 }
