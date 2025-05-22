@@ -910,7 +910,7 @@ cat.speak(); // Miau maulla.
 cow.speak(); // Lola muge.
                     </code></pre>
                     <p>
-                        En este ejemplo, tanto <b>Dog</b> como <b>Cat</b> heredan de <b>Animal</b>, pero implementan su propio método <b>speak</b>, lo que demuestra el polimorfismo.
+                        En este ejemplo, las funciones constructoras <b>Dog</b>, <b>Cat</b> y <b>Cow</b> heredan de la función constructora <b>Animal</b>, pero cada una implementa su propio método <b>speak</b>. Esto permite que cada objeto tenga un comportamiento diferente al llamar al mismo método.
                     </p>
                     <div class="img-wrapper">
                         <img src="img/m4c8/polymorphism.png" alt="El polimorfismo">
@@ -974,25 +974,137 @@ console.log(`Perímetro del círculo: ${circle.perimeter()}`); // Perímetro del
             </div>
         </div>
 <!-- 7 question -->
+        <div class="question-answer">
+            <div class="question-wrapper">
+                <h3>7. ¿Qué es una promesa en JS?</h3>
+                <div class="arrow down">&#9650;</div>
+            </div>
+            <div class="answer-wrapper close">
+                <div class="answer-contenido">
+                    <p>
+                        &#128204; <b class="large-text">Una promesa</b> (promise) en JavaScript es un objeto que representa la eventual finalización (o falla) de una operación asíncrona y su valor resultante. Las promesas son una forma de manejar operaciones asíncronas en JavaScript, lo que permite escribir código más limpio y legible.
+                    </p>
+                    <br>
+                    <p>
+                        <i class="underlined">Una promesa puede estar en uno de los siguientes estados:</i>
+                    </p>
+                    <ul>
+                        <li><b>Pendiente</b> (pending): El estado inicial, la operación aún no se ha completado.</li>
+                        <li><b>Cumplida</b> (fulfilled): La operación se ha completado con éxito y la promesa tiene un valor resultante.</li>
+                        <li><b>Rechazada</b> (rejected): La operación ha fallado y la promesa tiene un motivo de rechazo.</li>
+                    </ul>
+                    <br>
+                    <p>
+                        Ejemplo de <b>una promesa</b>:
+                    </p>
+                    <pre><code>
+const myPromise = new Promise((resolve, reject) => {
+    const exito = true; // Cambia a false para simular un error
+    
+    if (exito) {
+        resolve('¡Todo salió bien!');
+    } else {
+        reject('Algo salió mal');
+    }
+});
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+myPromise
+    .then(result => {
+        console.log(result); // ¡Todo salió bien!
+    })
+    .catch(error => {
+        console.error(error); // Algo salió mal
+    });
+                    </code></pre>
+                    <p>
+                        En este ejemplo, se crea una nueva promesa llamada <b>myPromise</b>. Dentro de la función constructora de la promesa, se simula una operación asíncrona que puede tener éxito o fallar. Si la operación tiene éxito, se llama a <b>resolve</b> con un mensaje de éxito. Si falla, se llama a <b>reject</b> con un mensaje de error.
+                    </p>
+                    <br>
+                    <p>
+                        <i class="underlined">Las promesas son útiles para:</i>
+                    </p>
+                    <ul>
+                        <li>Manejar operaciones asíncronas de manera más legible y estructurada.</li>
+                        <li>Evitar el llamado "callback hell" (infierno de callbacks) al encadenar promesas.</li>
+                        <li>Proporcionar un manejo de errores más limpio y consistente.</li>
+                    </ul>
+                </div>
+                <div class="arrow-2">&#9650;</div>
+            </div>
+        </div>
+<!-- 8 question -->
+        <div class="question-answer">
+            <div class="question-wrapper">
+                <h3>8. ¿Qué hacen async y await por nosotros?</h3>
+                <div class="arrow down">&#9650;</div>
+            </div>
+            <div class="answer-wrapper close">
+                <div class="answer-contenido">
+                    <p>
+                        <b class="large-text">Async</b> y <b class="large-text">Await</b> son dos palabras clave introducidas en ES2017 (ES8) que permiten trabajar con promesas de una manera más sencilla y legible. Estas palabras clave se utilizan para escribir código asíncrono de forma más similar al código síncrono, lo que facilita la comprensión y el mantenimiento del mismo.
+                    </p>
+                    <div class="img-wrapper">
+                        <img src="img/m4c8/async_await.jpg" alt="Loops JS">
+                    </div>
+                    <hr>
+                    <p>
+                        &#128204; <b class="large-text">La palabra clave async</b> se utiliza para declarar una función asíncrona. Una función asíncrona es una función que siempre devuelve una promesa, y dentro de ella puedes usar la palabra clave <b>await</b> para esperar a que se resuelva una promesa antes de continuar con la ejecución del código.
+                    </p>
+                    <br>
+                    <p>
+                        Ejemplo de una <b>función asíncrona</b>:
+                    </p>
+                    <pre><code>
+async function fetchData() {
+    const response = await fetch('https://api.example.com/data');
+    const data = await response.json();
+    console.log(data);
+}
+                    </code></pre>
+                    <p>
+                        En este ejemplo, la función <b>fetchData</b> es una función asíncrona que utiliza <b>await</b> para esperar a que se resuelva la promesa devuelta por la función <b>fetch</b>. Esto permite que el código sea más legible y fácil de entender.
+                    </p>
+                    <br>
+                    <p>
+                        &#128204; <b class="large-text">La palabra clave await</b> se utiliza dentro de una función asíncrona para esperar a que se resuelva una promesa. Cuando se utiliza <b>await</b>, la ejecución de la función se pausa hasta que la promesa se resuelve, lo que permite escribir código asíncrono de manera más secuencial.
+                    </p>
+                    <br>
+                    <p>
+                        Ejemplo de uso de <b>await</b>:
+                    </p>
+                    <pre><code>
+async function fetchData() {
+    try {
+        const response = await fetch('https://api.example.com/data');
+        const data = await response.json();
+        console.log(data);
+    } catch (error) {
+        console.error('Error al obtener los datos:', error);
+    }
+}
+fetchData();
+                    </code></pre>
+                    <p>
+                        En este ejemplo, la función <b>fetchData</b> utiliza <b>await</b> para esperar a que se resuelva la promesa devuelta por la función <b>fetch</b>. Si ocurre un error durante la obtención de los datos, se captura y se maneja en el bloque <b>catch</b>.
+                    </p>
+                    <hr>
+                    <p>
+                        <i class="underlined">Ventajas de usar <b>async</b> y <b>await</b>:</i>
+                    </p>
+                    <ul>
+                        <li>Mejora la legibilidad del código al permitir escribir código asíncrono de manera más secuencial.</li>
+                        <li>Facilita el manejo de errores utilizando bloques <b>try</b> y <b>catch</b>.</li>
+                        <li>Reduce la complejidad del código al evitar el "callback hell".</li>
+                        <li>Permite trabajar con promesas de manera más intuitiva.</li>
+                    </ul>
+                    <br>
+                    <p>
+                        En resumen, <b>async</b> y <b>await</b> son herramientas poderosas que facilitan el trabajo con promesas y operaciones asíncronas en JavaScript. Al utilizar estas palabras clave, puedes escribir código más limpio, legible y fácil de mantener.
+                    </p>
+                </div>
+                <div class="arrow-2">&#9650;</div>
+            </div>
+        </div>
     </main>
     <footer>
         <p>&copy; 2025 Tetiana Kononenko</p>
